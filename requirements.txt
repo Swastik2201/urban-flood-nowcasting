@@ -1,5 +1,15 @@
-streamlit
-pandas
-folium
-streamlit-folium
-requests
+streamlit>=1.36
+streamlit-folium>=0.20
+streamlit-autorefresh>=1.0
+folium>=0.16
+pandas>=2.0
+requests>=2.31
+pytest>=8.0
+# Reads GPS out of a reported photo's EXIF. Optional: without it the reporter
+# picks the location by hand and everything else still works.
+Pillow>=10.0
+
+# Optional, and only for the raster path in hand.py. The point-sampling route
+# that fetch_hand.py uses needs nothing beyond requests, so leave this
+# commented unless you want HAND as a continuous layer.
+# rasterio>=1.3
